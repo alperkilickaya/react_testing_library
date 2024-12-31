@@ -1,0 +1,10 @@
+# Node.js modüllerini hariç tut
+**/node_modules
+# Paket kilit dosyaları hariç tutulmaz (isteğe bağlı)
+# .env dosyalarını hariç tut
+**/.env
+# Log dosyalarını hariç tut
+**/*.log
+# Çalışma zamanı veya testle ilgili geçici dosyalar
+coverage/
+.DS_Store
