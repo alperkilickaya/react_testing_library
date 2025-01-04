@@ -1,9 +1,11 @@
-import { render, screen } from "@testing-library/react";
+import { logRoles, render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import App from "./App";
 
 test("renders learn react link", async () => {
-  render(<App />);
+  const { container } = render(<App />);
+  // find all the roles in the container
+  logRoles(container);
 
   const nameInput = screen.getByRole("textbox", { name: /name/i });
   const emailInput = screen.getByRole("textbox", { name: /email/i });
